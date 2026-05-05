@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drishti Rana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Particle background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Custom cursor -->
+  <div class="c-dot" id="cDot"></div>
+  <div class="c-ring" id="cRing"></div>
+
+  <!-- Theme toggle -->
+  <button class="theme-btn mag" id="themeBtn" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon" id="themeIcon"></i>
+  </button>
+
+  <!-- Floating nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">DR</a>
+      <div class="nav-links">
+        <a href="#education"  class="nl" data-s="education">Education</a>
+        <a href="#experience" class="nl" data-s="experience">Experience</a>
+        <a href="#projects"   class="nl" data-s="projects">Projects</a>
+        <a href="#skills"     class="nl" data-s="skills">Skills</a>
+        <a href="#certs"      class="nl" data-s="certs">Certs</a>
+        <a href="#roles"      class="nl" data-s="roles">Roles</a>
+      </div>
+      <a href="mailto:drishti.rana@shorthills.ai" class="nav-cta mag">Hire Me</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ───────────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-pill mag">
+          <span class="pulse-dot"></span> Open to opportunities
+        </div>
+        <h1 class="hero-name">
+          <span id="typeTarget"></span><span class="t-cursor" id="tCursor">|</span>
+        </h1>
+        <p class="hero-sub" id="heroSub"></p>
+        <div class="hero-actions">
+          <a href="https://github.com/drish08"              target="_blank" class="btn-primary mag"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/drishtirana1011/" target="_blank" class="btn-outline mag"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://leetcode.com/drish03/"           target="_blank" class="btn-outline mag"><i class="fa-solid fa-terminal"></i> LeetCode</a>
+        </div>
+        <div class="hero-contact">
+          <a href="mailto:drishti.rana@shorthills.ai"><i class="fa-solid fa-envelope"></i> drishti.rana@shorthills.ai</a>
+          <a href="tel:+918770139973"><i class="fa-solid fa-phone"></i> +91 8770139973</a>
+          <a href="https://www.hackerrank.com/profile/0201cs201023" target="_blank"><i class="fa-brands fa-hackerrank"></i> HackerRank</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ──────────────────────────────────── -->
+    <section class="sec" id="education">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">01</span>
+          <h2>Academic Qualifications</h2>
+        </div>
+        <div class="edu-grid">
+
+          <div class="edu-card glass reveal tilt" style="--d:0s">
+            <div class="spot"></div>
+            <div class="edu-yr">2024</div>
+            <div class="edu-body">
+              <h3>B.Tech — Computer Science Engineering</h3>
+              <p>Jabalpur Engineering College, Jabalpur</p>
+            </div>
+            <div class="edu-score">8.24<sub>/10</sub></div>
+          </div>
+
+          <div class="edu-card glass reveal tilt" style="--d:.1s">
+            <div class="spot"></div>
+            <div class="edu-yr">2020</div>
+            <div class="edu-body">
+              <h3>CBSE Class XII</h3>
+              <p>S.K Public School, Robertsganj</p>
+            </div>
+            <div class="edu-score">88.6<sub>%</sub></div>
+          </div>
+
+          <div class="edu-card glass reveal tilt" style="--d:.2s">
+            <div class="spot"></div>
+            <div class="edu-yr">2018</div>
+            <div class="edu-body">
+              <h3>CBSE Class X</h3>
+              <p>St. Joseph's School, Shaktinagar</p>
+            </div>
+            <div class="edu-score">93.6<sub>%</sub></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ─────────────────────────────────── -->
+    <section class="sec" id="experience">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">02</span>
+          <h2>Work Experience</h2>
+        </div>
+        <div class="exp-list">
+
+          <div class="exp-row reveal tilt" style="--d:0s">
+            <div class="exp-timeline">
+              <div class="exp-dot dot-live"></div>
+              <div class="exp-vline"></div>
+            </div>
+            <div class="exp-card glass">
+              <div class="spot"></div>
+              <div class="exp-hd">
+                <div>
+                  <h3>Agentic AI-Powered APQR System</h3>
+                  <span class="co">Shorthills AI</span>
+                </div>
+                <div class="exp-meta">
+                  <span class="chip chip-live">June '25 – Present</span>
+                  <a href="https://github.com/drishsh/APQR-agents" target="_blank" class="ibtn"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+              <ul>
+                <li>Built an LLM-powered automation pipeline for APQR workflows using <strong>Google ADK</strong>, Python, PostgreSQL, and Streamlit.</li>
+                <li>Engineered high-fidelity APQR data models enabling near real-world simulation of pharmaceutical quality systems.</li>
+                <li>Orchestrated data extraction from semi-structured Excel/PDF sources with dynamic metadata handling.</li>
+                <li>Integrated <strong>Power Automate</strong> workflows for automated document storage, scheduling, and dashboard updates.</li>
+              </ul>
+              <div class="tech-chips"><span>Google ADK</span><span>Python</span><span>PostgreSQL</span><span>Streamlit</span><span>Power Automate</span></div>
+            </div>
+          </div>
+
+          <div class="exp-row reveal tilt" style="--d:.1s">
+            <div class="exp-timeline">
+              <div class="exp-dot"></div>
+              <div class="exp-vline"></div>
+            </div>
+            <div class="exp-card glass">
+              <div class="spot"></div>
+              <div class="exp-hd">
+                <div>
+                  <h3>Power Automate Workflows</h3>
+                  <span class="co">Microsoft Power Platform · Intune · Entra</span>
+                </div>
+                <div class="exp-meta">
+                  <span class="chip">Apr '25 – May '25</span>
+                  <a href="https://github.com/drishsh/Cyber-Analyst" target="_blank" class="ibtn"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+              <ul>
+                <li>Built end-to-end automation for <strong>Entra ID</strong> weekly reports and <strong>Intune</strong> dashboard generation.</li>
+                <li>Linked with Excel data sources to produce batch-wise analytics and PDF exports.</li>
+                <li>Automated report delivery via <strong>Outlook</strong> and <strong>SharePoint</strong> integration.</li>
+              </ul>
+              <div class="tech-chips"><span>Power Automate</span><span>Excel</span><span>Entra ID</span><span>Intune</span><span>SharePoint</span></div>
+            </div>
+          </div>
+
+          <div class="exp-row reveal tilt" style="--d:.2s">
+            <div class="exp-timeline">
+              <div class="exp-dot"></div>
+            </div>
+            <div class="exp-card glass">
+              <div class="spot"></div>
+              <div class="exp-hd">
+                <div>
+                  <h3>Software Engineer Intern</h3>
+                  <span class="co">Persistent Systems, Pune — Remote</span>
+                </div>
+                <div class="exp-meta">
+                  <span class="chip">Jan '24 – Sept '24</span>
+                  <a href="https://drive.google.com/file/d/1rKBYLJQx24i8q_rIGtNscITha6jApKbn/view?usp=sharing" target="_blank" class="ibtn"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+              <ul>
+                <li>Gained proficiency in <strong>JavaScript</strong>, <strong>.NET</strong> framework, and <strong>Oracle</strong> database management.</li>
+                <li>Applied agile methodologies (<strong>Scrum, Kanban</strong>) and explored <strong>DevSecOps</strong> principles.</li>
+                <li>Implemented <strong>CI/CD pipelines</strong> and SDLC practices using Bootstrap, HTML5, CSS, Git, and GitHub.</li>
+              </ul>
+              <div class="tech-chips"><span>JavaScript</span><span>.NET</span><span>Oracle DB</span><span>CI/CD</span><span>Git</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────── -->
+    <section class="sec" id="projects">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">03</span>
+          <h2>Key Projects</h2>
+        </div>
+        <div class="proj-grid">
+
+          <div class="proj-card glass reveal tilt" style="--d:0s">
+            <div class="spot"></div>
+            <div class="proj-glow glow-purple"></div>
+            <div class="proj-top">
+              <span class="proj-num">01</span>
+              <a href="https://github.com/drish08/Fraud-Detection-by-Autoencoder/tree/main" target="_blank" class="ibtn"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <h3>Credit Card Fraud Detection</h3>
+            <p class="proj-period">ML · Data Analytics · Nov '23 – Apr '24</p>
+            <p class="proj-desc">Deep learning-powered fraud detection using <strong>RNNs</strong> and <strong>autoencoders</strong>. Applied <strong>PCA</strong> and <strong>t-SNE</strong> dimensionality reduction on high-dimensional transaction data.</p>
+            <div class="tech-chips"><span>Python</span><span>RNN</span><span>Autoencoder</span><span>PCA</span><span>t-SNE</span><span>scikit-learn</span></div>
+          </div>
+
+          <div class="proj-card glass reveal tilt" style="--d:.15s">
+            <div class="spot"></div>
+            <div class="proj-glow glow-cyan"></div>
+            <div class="proj-top">
+              <span class="proj-num">02</span>
+              <a href="https://github.com/rohitrsharma3/HackJec_ReadingReparo" target="_blank" class="ibtn"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <h3>Reading Reparo</h3>
+            <p class="proj-period">Smart India Hackathon · Feb '22 – Oct '22</p>
+            <p class="proj-desc">Web platform for children's feedback collection. Achieved a <strong>30% increase</strong> in response rate and secured <strong>Top 5</strong> nationally out of 50 competing university teams.</p>
+            <div class="tech-chips"><span>HTML/CSS/JS</span><span>Web Dev</span><span>Hackathon</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────── -->
+    <section class="sec" id="skills">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">04</span>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="stats-row reveal">
+          <div class="stat-orb">
+            <svg viewBox="0 0 100 100" class="ring-svg">
+              <circle class="rb" cx="50" cy="50" r="38"/>
+              <circle class="rf rf-purple" cx="50" cy="50" r="38" data-pct="80"/>
+            </svg>
+            <div class="stat-mid"><span class="snum" data-to="400">0</span><sup>+</sup></div>
+            <p>LeetCode Problems</p>
+          </div>
+          <div class="stat-orb">
+            <svg viewBox="0 0 100 100" class="ring-svg">
+              <circle class="rb" cx="50" cy="50" r="38"/>
+              <circle class="rf rf-cyan" cx="50" cy="50" r="38" data-pct="88"/>
+            </svg>
+            <div class="stat-mid"><span class="snum" data-to="88">0</span><sup>%</sup></div>
+            <p>Accuracy</p>
+          </div>
+          <div class="stat-orb">
+            <svg viewBox="0 0 100 100" class="ring-svg">
+              <circle class="rb" cx="50" cy="50" r="38"/>
+              <circle class="rf rf-rose" cx="50" cy="50" r="38" data-pct="65"/>
+            </svg>
+            <div class="stat-mid"><span class="snum" data-to="40">0</span><sup>+</sup></div>
+            <p>Contests</p>
+          </div>
+          <div class="stat-orb">
+            <svg viewBox="0 0 100 100" class="ring-svg">
+              <circle class="rb" cx="50" cy="50" r="38"/>
+              <circle class="rf rf-green" cx="50" cy="50" r="38" data-pct="75"/>
+            </svg>
+            <div class="stat-mid"><span class="snum" data-to="1500">0</span><sup>+</sup></div>
+            <p>Max Rating</p>
+          </div>
+        </div>
+
+        <div class="skill-grid reveal" style="--d:.2s">
+          <div class="skill-card glass tilt">
+            <div class="spot"></div>
+            <h4><i class="fa-solid fa-code"></i> Programming</h4>
+            <div class="tag-cloud"><span>C++</span><span>C</span><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS</span><span>SQL</span></div>
+          </div>
+          <div class="skill-card glass tilt">
+            <div class="spot"></div>
+            <h4><i class="fa-solid fa-brain"></i> ML / Data Science</h4>
+            <div class="tag-cloud"><span>Machine Learning</span><span>Deep Learning</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>PySpark</span><span>matplotlib</span><span>seaborn</span></div>
+          </div>
+          <div class="skill-card glass tilt">
+            <div class="spot"></div>
+            <h4><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</h4>
+            <div class="tag-cloud"><span>Google ADK</span><span>Power Automate</span><span>AWS</span><span>GCP</span><span>GitHub</span><span>CI/CD</span></div>
+          </div>
+          <div class="skill-card glass tilt">
+            <div class="spot"></div>
+            <h4><i class="fa-solid fa-chart-bar"></i> Analytics &amp; Tools</h4>
+            <div class="tag-cloud"><span>Power BI</span><span>Tableau</span><span>Excel</span><span>Jupyter Lab</span><span>PostgreSQL</span><span>Streamlit</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATES ───────────────────────────────── -->
+    <section class="sec" id="certs">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">05</span>
+          <h2>Courses &amp; Certificates</h2>
+        </div>
+        <div class="cert-grid">
+          <a href="https://www.skills.google/public_profiles/d2055d0b-162c-45de-a22a-7b885f8e216f/badges/21508433" target="_blank" class="cert-card glass reveal tilt" style="--d:0s"><div class="spot"></div><i class="fa-solid fa-robot"></i><span>Agent Fundamentals</span><small>Google</small></a>
+          <a href="https://www.skills.google/public_profiles/d2055d0b-162c-45de-a22a-7b885f8e216f/badges/21527987" target="_blank" class="cert-card glass reveal tilt" style="--d:.05s"><div class="spot"></div><i class="fa-solid fa-network-wired"></i><span>Deploy Multi-Agent Architectures</span><small>Google</small></a>
+          <a href="https://www.skills.google/public_profiles/d2055d0b-162c-45de-a22a-7b885f8e216f/badges/21508530" target="_blank" class="cert-card glass reveal tilt" style="--d:.1s"><div class="spot"></div><i class="fa-solid fa-sliders"></i><span>Optimize Agent Behavior</span><small>Google</small></a>
+          <a href="https://www.skills.google/public_profiles/d2055d0b-162c-45de-a22a-7b885f8e216f/badges/21436655" target="_blank" class="cert-card glass reveal tilt" style="--d:.15s"><div class="spot"></div><i class="fa-solid fa-microchip"></i><span>Build Intelligent Agents (ADK)</span><small>Google</small></a>
+          <a href="https://www.skills.google/public_profiles/d2055d0b-162c-45de-a22a-7b885f8e216f/badges/21645957" target="_blank" class="cert-card glass reveal tilt" style="--d:.2s"><div class="spot"></div><i class="fa-solid fa-gears"></i><span>MLOps for Generative AI</span><small>Google</small></a>
+          <a href="https://trainings.internshala.com/view_certificate/430jn2zpgdu/dq7vhq0q3gi/" target="_blank" class="cert-card glass reveal tilt" style="--d:.25s"><div class="spot"></div><i class="fa-solid fa-chart-line"></i><span>Data Science Training</span><small>Internshala</small></a>
+          <a href="https://drive.google.com/file/d/16Y131Ehxp_B4jD5JV2bb8kYI_LF-WQms/view" target="_blank" class="cert-card glass reveal tilt" style="--d:.3s"><div class="spot"></div><i class="fa-brands fa-python"></i><span>Python Pro Bootcamp</span><small>Udemy</small></a>
+          <a href="https://drive.google.com/file/d/1NnaXP-h49fLKvTqCydIsSDDJ4O4Q1MBj/view" target="_blank" class="cert-card glass reveal tilt" style="--d:.35s"><div class="spot"></div><i class="fa-brands fa-aws"></i><span>AWS Certification</span><small>Aenox Digital</small></a>
+          <a href="https://www.cloudskillsboost.google/public_profiles/d2055d0b-162c-45de-a22a-7b885f8e216f" target="_blank" class="cert-card glass reveal tilt" style="--d:.4s"><div class="spot"></div><i class="fa-brands fa-google"></i><span>Google Cloud &amp; Qwiklabs</span><small>Google</small></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ROLES ──────────────────────────────────────── -->
+    <section class="sec" id="roles">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">06</span>
+          <h2>Positions of Responsibility</h2>
+        </div>
+        <div class="roles-grid">
+
+          <div class="role-card glass reveal tilt" style="--d:0s">
+            <div class="spot"></div>
+            <div class="role-top">
+              <div class="role-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+              <div>
+                <h3>Secretary</h3>
+                <span class="co">ACM JEC, Jabalpur</span>
+              </div>
+              <div class="exp-meta" style="margin-left:auto">
+                <span class="chip">Jan '23 – Jan '24</span>
+                <a href="https://drive.google.com/file/d/1iw2e_OFRSjH9T2y0tkLefiK8el2Opf3T/view" target="_blank" class="ibtn"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <ul>
+              <li><strong>Meeting Coordination:</strong> Managed scheduling, agendas, and minutes for chapter meetings.</li>
+              <li><strong>Communication &amp; Docs:</strong> Oversaw channels and maintained accurate records.</li>
+              <li><strong>Event Planning:</strong> Organized ACM events including logistics and guest coordination.</li>
+            </ul>
+          </div>
+
+          <div class="role-card glass reveal tilt" style="--d:.1s">
+            <div class="spot"></div>
+            <div class="role-top">
+              <div class="role-icon"><i class="fa-brands fa-google"></i></div>
+              <div>
+                <h3>Web Developer</h3>
+                <span class="co">Google Developer Students Club JEC</span>
+              </div>
+              <div class="exp-meta" style="margin-left:auto">
+                <span class="chip">Oct '21 – Aug '22</span>
+              </div>
+            </div>
+            <ul>
+              <li>Optimized GDSC JEC website using CSS, HTML, and JavaScript for engagement and organizational needs.</li>
+              <li>Managed complex design projects with senior developers and professors to meet deadlines.</li>
+              <li>Collaborated with GDSC lead on developing a mobile app based on website analytics.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXTRAS ─────────────────────────────────────── -->
+    <section class="sec" id="extras">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">07</span>
+          <h2>Extra-Curricular</h2>
+        </div>
+        <div class="extra-row">
+          <div class="extra-card glass reveal tilt" style="--d:0s">
+            <div class="spot"></div>
+            <i class="fa-solid fa-palette"></i>
+            <div>
+              <strong>President, Art Club</strong>
+              <p>Encouraged creativity and collaboration through art and organized student activities.</p>
+            </div>
+          </div>
+          <div class="extra-card glass reveal tilt" style="--d:.1s">
+            <div class="spot"></div>
+            <i class="fa-solid fa-house-lock"></i>
+            <div>
+              <strong>Girls Hostel Prefect</strong>
+              <p>Exemplified leadership in maintaining a safe and harmonious hostel environment.</p>
+            </div>
+          </div>
+          <div class="extra-card glass reveal tilt" style="--d:.2s">
+            <div class="spot"></div>
+            <i class="fa-solid fa-trophy"></i>
+            <div>
+              <strong>Hackathon &amp; Cloud Wins</strong>
+              <p>Won merchandises and certifications in MLH Hackathons, Google Cloud Practitioner, and AWS Campus Exam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Drishti Rana &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; <span class="grad-text">HTML5 · CSS · JS</span></p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
